@@ -38,39 +38,39 @@ from datetime import datetime
 import binascii
 import ipaddress
 import platform
-a = random.randrange(1,16)
-if a == 1:
-    a="197.158.100.9"
-elif a == 2:
-    a="196.168.100.195"   
-elif a == 3:
-    a="198.178.160.80"
-elif a == 4:
-    a="196.126.100.70"
-elif a == 5:
-    a="193.156.120.35"
-elif a == 6:
-    a="192.100.179.10" 
-elif a == 7:
-    a="198.167.168.80"
-elif a == 8:
-    a="195.132.100.70" 
-elif a == 9:
-    a="194.120.100.40"
-elif a == 10:
-    a="196.120.150.10"  
-elif a == 11:
-    a="194.102.130.18"
-elif a == 12:
-    a="196.120.178.15"
-elif a == 13:
-    a="196.129.168.17"
-elif a == 14:
-    a="195.120.100.16" 
-elif a == 15:
-    a="198.167.178.30"
-elif a == 16:
-    a="194.132.100.70"   
+wq = random.randrange(1,16)
+if wq == 1:
+    wq="197.158.100.9"
+elif wq == 2:
+    wq="196.168.100.195"   
+elif wq == 3:
+    wq="198.178.160.80"
+elif wq == 4:
+    wq="196.126.100.70"
+elif wq == 5:
+    wq="193.156.120.35"
+elif wq == 6:
+    wq="192.100.179.10" 
+elif wq == 7:
+    wq="198.167.168.80"
+elif wq == 8:
+    wq="195.132.100.70" 
+elif wq == 9:
+    wq="194.120.100.40"
+elif wq == 10:
+    wq="196.120.150.10"  
+elif wq == 11:
+    wq="194.102.130.18"
+elif wq == 12:
+    wq="196.120.178.15"
+elif wq == 13:
+    wq="196.129.168.17"
+elif wq == 14:
+    wq="195.120.100.16" 
+elif wq == 15:
+    wq="198.167.178.30"
+elif wq == 16:
+    wq="194.132.100.70"   
 
 m = random.randrange(1,4)    
 if m == 1:
@@ -146,17 +146,30 @@ sleep(1)
 os.system("clear")
 sleep(2)                    
 x = "\033[31;m"
+#e = "\033[32;m"
 h ="\033[34;m"
 u = "\033[36;m"
 r = "\033[33;m"
 RR = "\033[29;m"
+SS = "\033[32;m"
 def a(s):
         for c in s + '\n':
                 sys.stdout.write(c)
                 sys.stdout.flush()
                 time.sleep(1./170)
 00
-
+def e(s):
+        for c in s + '\n':
+                sys.stdout.write(c)
+                sys.stdout.flush()
+                time.sleep(1./170)
+00	
+def f(s):
+        for c in s + '\n':
+                sys.stdout.write(c)
+                sys.stdout.flush()
+                time.sleep(1./170)
+00		
 a(RR+"█▀▄▀█ █░░█ █▀▀▀█ █▀▀▀ ▀▀█▀▀ █░▒█ █▀▀█")
 a(RR+"█▒█▒█ █▄▄█ ▀▀▀▄▄ █▀▀▀ ░▒█░░ █░▒█ █▄▄█")
 a(RR+"█░░▒█ ▄▄▄█ █▄▄▄█ █▄▄▄ ░▒█░░ ▀▄▄▀ █░░░")
@@ -685,47 +698,49 @@ elif choice == 14:
     print (inter.Internet())                                                           
     
 elif choice == 15:
-    print("Bash > python3.9 > Linux > 2022")
+    print("Bash > python3.9 > Linux ")
     while True:
-        a = input(">>>")
-        os.system(a)    
-
+	    a = input(">>>")
+	    os.system(a)    
+	
 
 elif choice  == 16:
 
     c = input("Username: ")
     c = f"@{c}"   
     d = f"Buscando claves de {c} ..."
-    e(RR+d)
+    e(SS+d)
     sleep(2)
-    e(RR+"Buscando IP's...")
+    e(SS+"Buscando IP's...")
     sleep(1)
     j = 32895
     for g in range (1,m):
             print(h+"127.0.0.1:", j)
             j=j+7412
             sleep(1)
-    f(u+ str(a))
+    wq = f"{wq}"    
+    g = f"{g}"   
+    f(u+ str(wq))
     sleep(1)
-    print(u, "SUCCESSFUL")
-    e(RR+f"Buscando servidores a activos de {a}...")
+    print(wq, "SUCCESSFUL")
+    e(SS+f"Buscando servidores a activos de {wq}")
     print(r+"")
     g = 9873
     for sa in range(1,m):
         sleep(1)
-        print(r+a,"::",g)
+        print(r, wq,"::",g)
         g=g+4172 
     g=g+1291     
-    e(u+f"{a}::{g}")  
+    e(u+f"{wq} :: {g}")  
     e(u+"SUCCESSFUL")     
-    e(RR+'CRACKING FOR PASSWORD...')
+    e(SS+'CRACKING FOR PASSWORD...')
     print(r+"")
     for y in range(1,m):
         sleep(1)
         p()
     e(u+"password successful, packing in password.txt")
-    e(RR+"information for database...")
-    e(RR+"MySQL and SQLMAP successful")
+    e(SS+"information for database...")
+    e(SS+"MySQL and SQLMAP successful")
     e(u+"databases successful, packing in databases.txt")   
     e(u+'successful')
 elif choice == 17:
@@ -733,38 +748,38 @@ elif choice == 17:
     c = input("Username: ")
     c = f"@{c}"   
     d = f"Buscando claves de {c} ..."
-    e(RR+d)
+    e(SS+d)
     sleep(2)
-    e(RR+"Buscando IP's...")
+    e(SS+"Buscando IP's...")
     sleep(1)
-    e(RR+"Entrando a la base de datos")
+    e(SS+"Entrando a la base de datos")
     j = 15895
     for g in range (1,m):
             print(h+"127.0.0.1:", j)
             j=j+8567
             sleep(1)
-    f(u+ str(a))
+    f(u+ str(wq))
     sleep(1)
     print(u, "SUCCESSFUL")
-    e(RR+f"Buscando servidores a activos de {a}...")
+    e(SS+f"Buscando servidores a activos de {wq}...")
     print(r+"")
     g = 9873
     for sa in range(1,m):
         sleep(1)
-        print(r+a,"::",g)
+        print(r+wq,"::",g)
         g=g+4172 
     g=g+1291     
-    e(u+f"{a}::{g}")  
+    e(u+f"{wq}::{g}")  
     e(u+"SUCCESSFUL")     
-    e(RR+'CRACKING FOR PASSWORD...')
+    e(SS+'CRACKING FOR PASSWORD...')
     print(r+"")
     for y in range(1,m):
         sleep(1)
         p()
         
     e(u+"password successful, packing in password.txt(2)")
-    e(RR+"information for database...")
-    e(RR+"information successful")
+    e(SS+"information for database...")
+    e(SS+"information successful")
     e(u+"databases successful, packing in databases.txt(2)")   
     e(u+'successful')    
     
@@ -773,41 +788,41 @@ elif choice == 18:
     c = input("Username: ")
     c = f"@{c}"   
     d = f"Buscando claves de {c} ..."
-    e(RR+d)
+    e(SS+d)
     sleep(2)
-    e(RR+"Entrando a 'META'...")
+    e(SS+"Entrando a 'META'...")
     sleep(1)
-    e(RR+"Buscando IP's...")
+    e(SS+"Buscando IP's...")
     sleep(1)
-    e(RR+"Entrando a la base de datos de 'META' ")
+    e(SS+"Entrando a la base de datos de 'META' ")
     sleep(1)
     j = 18102
     for yu in range (1,m):
             print(h+"127.0.0.1::", j)
             j=j+7120
             sleep(1)
-    f(u+ str(a))
+    f(u+ str(wq))
     sleep(1)
-    e(RR+f"Buscando servidores a activos de {a}...")
+    e(SS+f"Buscando servidores a activos de {wq}...")
     print(r+"")
     g = 9873
     for sa in range(1,m):
         sleep(1)
-        print(r+a,"::",g)
+        print(r+wq,"::",g)
         g=g+4172 
     g=g+1291     
-    e(u+f"{a}::{g}")  
+    e(u+f"{wq}::{g}")  
     e(u+"SUCCESSFUL")     
     print(u, "SUCCESSFUL")
-    e(RR+'CRACKING FOR PASSWORD...')
+    e(SS+'CRACKING FOR PASSWORD...')
     print(r+"")
     for y in range(1,m):
         sleep(1)
         p()
         
     e(u+"password successful, packing in password.txt(3)")
-    e(RR+"information for database...")
-    e(RR+"information successful")
+    e(SS+"information for database...")
+    e(SS+"information successful")
     e(u+"databases successful, packing in databases.txt(3)")   
     e(u+'successful') 
 elif choice == 19:
@@ -815,22 +830,22 @@ elif choice == 19:
     c = input("Username: ")
     c = f"@{c}"   
     d = f"Buscando claves de {c} ..."
-    e(RR+d)
+    e(SS+d)
     sleep(2)
-    e(RR+"Buscando IP's...")
+    e(SS+"Buscando IP's...")
     sleep(1)
-    e(RR+"Entrando a la base de datos")
+    e(SS+"Entrando a la base de datos")
     j = 29170
     for g in range (1,m):
             print(h+"127.0.0.1:", j)
             j=j+5401
             sleep(1)
-    f(u+ str(a))
+    f(u+ str(wq))
     sleep(1)
     print(u, "SUCCESSFUL")
-    e(RR+'CRACKING FOR FILES')
+    e(SS+'CRACKING FOR FILES')
     e(u+"files successful, packing in files.txt(4)")
-    e(RR+"Check for numer")
+    e(SS+"Check for numer")
     sleep(1)
     print(r+"")
     for y in range(1,m):
@@ -838,21 +853,21 @@ elif choice == 19:
         l()    
     e(u+"numer successful, packing in  numer.txt(4)")
     sleep(1)
-    e(RR+"Creando copia de segiridad...")
-    e(RR+"EXPORTANDO COPIA...")
+    e(SS+"Creando copia de segiridad...")
+    e(SS+"EXPORTANDO COPIA...")
     e(u+"successful")
-    e(RR+f"Buscando servidores a activos de {a}...")
+    e(SS+f"Buscando servidores a activos de {wq}...")
     print(r+"")
     g = 9873
     for sa in range(1,m):
         sleep(1)
-        print(r+a,"::",g)
+        print(r+wq,"::",g)
         g=g+4172 
     g=g+1291     
-    e(u+f"{a}::{g}")  
+    e(u+f"{wq}::{g}")  
     e(u+"SUCCESSFUL") 
-    e(RR+"information for database...")
-    e(RR+"information successful")
+    e(SS+"information for database...")
+    e(SS+"information successful")
     e(u+"databases successful, packing in databases.txt(4)")   
     e(u+'successful')  
         
@@ -861,22 +876,22 @@ elif choice == 20:
     c = input("numero: ")
     c = f"@{c}"   
     d = f"Buscando claves de {c} ..."
-    e(RR+d)
+    e(SS+d)
     sleep(2)
-    e(RR+"Buscando IP's...")
+    e(SS+"Buscando IP's...")
     sleep(1)
-    e(RR+"Entrando a la base de datos")
+    e(SS+"Entrando a la base de datos")
     j = 29170
     for g in range (1,m):
             print(h+"127.0.0.1:", j)
             j=j+5401
             sleep(1)
-    f(u+ str(a))
+    f(u+ str(wq))
     sleep(1)
     print(u, "SUCCESSFUL")
-    e(RR+'CRACKING FOR FILES')
+    e(SS+'CRACKING FOR FILES')
     e(u+"files successful, packing in files.txt(4)")
-    e(RR+"Check for code verify")
+    e(SS+"Check for code verify")
     sleep(1)
     print(r+"")
     for y in range(1,m):
@@ -884,31 +899,32 @@ elif choice == 20:
         q()    
     e(u+"code successful, packing in  code.txt(4)")
     sleep(1)
-    e(RR+"Creando copia de segiridad...")
-    e(RR+"EXPORTANDO COPIA...")
+    e(SS+"Creando copia de segiridad...")
+    e(SS+"EXPORTANDO COPIA...")
     e(u+"successful")
-    e(RR+f"Buscando servidores a activos de {a}...")
+    e(SS+f"Buscando servidores a activos de {wq}...")
     print(r+"")
     g = 9873
     for sa in range(1,m):
         sleep(1)
-        print(r+a,"::",g)
+        print(r+wq,"::",g)
         g=g+4172 
     g=g+1291     
-    e(u+f"{a}::{g}")  
+    e(u+f"{wq}::{g}")  
     e(u+"SUCCESSFUL") 
-    e(RR+"information for database...")
-    e(RR+"information successful")
+    e(SS+"information for database...")
+    e(SS+"information successful")
     e(u+"databases successful, packing in databases.txt(4)")   
     e(u+'successful')         
 
 elif choice == 21:
-    a(RR+"SOLO LOS ADMIN PUDEN USAR ESTE SCRIPT")
-    def a(s):
+    def mn(s):
             for c in s + '\n':
                     sys.stdout.write(c)
                     sys.stdout.flush()
-                    time.sleep(6./50)
+                    time.sleep(6./50)    
+    mn(RR+"SOLO LOS ADMIN PUDEN USAR ESTE SCRIPT")
+
     00
     #usua son playing with mom'
     axelxs = 1
@@ -916,7 +932,7 @@ elif choice == 21:
     if b == "axelxs":
         c = input("contraseña: ")  
         if c == "axelxs#30":
-            a(RR+"usuario registrado con exito...")
+            mn(RR+"usuario registrado con exito...")
             vy= float(input("tiempo de retardo: "))
             gh = 0
             while True:
