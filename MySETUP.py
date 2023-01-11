@@ -181,7 +181,7 @@ a(RR+" instagram: soy.axelxs")
 a(RR+" YouTube: a..x..e..l..x..s")
 print("")
 a(RR+"╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱   ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱")
-choice = int(input("1.-TIKTOK REPORT BOT\n2.-ESCANEO WEP\n3.-spam de correos gmail\n4.-info de IP publica\n5.-Servidor privado http\n6.-Mi IP privada \n7.-info basica de cualquier tipo de ip \n8.-Info de un numero\n9.-Barrido de IP\n10.-BotChat\n11.-TelegramBot\n12.-DDOS\n13.-codigo fuente de una wep\n14.-SSL wep\n15.-Usar bash\n16.-hacknet tiktok\n17.-hacknet ig\n18.-hacknet facebook\n19.-hacknet telegram\n20.-hacknet whatsapp\n21.-CCV VISA\nSeleccione una opsion: ")) 
+choice = int(input("1.-TIKTOK REPORT BOT\n2.-ESCANEO WEP\n3.-spam de correos gmail\n4.-info de IP publica\n5.-Servidor privado http\n6.-Mi IP privada \n7.-info basica de cualquier tipo de ip \n8.-Info de un numero\n9.-Barrido de IP\n10.-BotChat\n11.-TelegramBot\n12.-DDOS\n13.-codigo fuente de una wep\n14.-SSL wep\n15.-Usar bash\n16.-hacknet tiktok\n17.-hacknet ig\n18.-hacknet facebook\n19.-hacknet telegram\n20.-hacknet whatsapp\n21.-CCV VISA\n22.-intruso router\nSeleccione una opsion: ")) 
 
 b = 1         
 if choice == 1:
@@ -1054,4 +1054,28 @@ elif choice == 21:
                 xc =f"VISA:{c}{d}{v}"    
                 time.sleep(vy)
                 print(xc, gg, op)        
-                                                                                                                                                                                                                                                                           
+                                                
+elif choice == 22:                                                                                                       
+
+
+	IP = input("IP del host>>>")
+	port = 8000
+	print("el puerto designado es 8000")
+	print("recuerda redireccionar la IP predetermimada del router y redireccionar a ", IP,"::",port)	
+	host = socket.gethostname() 
+	BUFFER_SIZE = 1024 
+	while True:
+		with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as socket_tcp:
+		    socket_tcp.bind((IP, port)) 
+		    socket_tcp.listen(5) 
+		    conn, addr = socket_tcp.accept() 
+		    with conn:
+		        print('[*] Conexión establecida') 
+		        while True:
+		            data = conn.recv(BUFFER_SIZE)
+		            
+		            if not data:
+		                break
+		            else:
+		                print('[*] Datos recibidos: {}'.format(data.decode('utf-8'))) 
+		            conn.send(data)                                                                                                                                                                                                                                                                                                                                                                                                           
