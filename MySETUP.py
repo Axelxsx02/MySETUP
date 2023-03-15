@@ -1,15 +1,22 @@
 import os
-#FEWOvUK7hl6yfQW1JBCpHc
-os.system('pip install requests')
-os.system('pip install nmap')
-os.system('pip install telebot')
-os.system("pkg install nmap")
-try:
-    print("")
-except:
-    os.system("apt install nmap")
-os.system('clear')
+ins = input("instalar programa?[y/n]: ")
+if ins == "y":
+	os.system('pip install requests')
+	os.system('pip install nmap')
+	os.system('pip install telebot')
+	os.system("pkg install nmap")
+	os.system("pip install ping3")
+	
+	try:
+	    print("")
+	except:
+	    os.system("apt install nmap")
+	os.system('clear')
+elif ins == "n":
+	os.system("clear")
 import requests
+from ping3 import ping, verbose_ping
+import ping3
 import random
 from time import sleep
 from os import name, system
@@ -182,7 +189,7 @@ a(RR+" instagram: soy.axelxs")
 a(RR+" YouTube: a..x..e..l..x..s")
 print("")
 a(RR+"╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱   ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱")
-choice = int(input("1.-TIKTOK REPORT BOT\n2.-ESCANEO WEP\n3.-spam de correos gmail\n4.-info de IP publica\n5.-Servidor privado http\n6.-Mi IP privada \n7.-info basica de cualquier tipo de ip \n8.-Info de un numero\n9.-Barrido de IP\n10.-BotChat\n11.-TelegramBot\n12.-DDOS\n13.-codigo fuente de una wep\n14.-SSL wep\n15.-Usar bash\n16.-hacknet tiktok\n17.-hacknet ig\n18.-hacknet facebook\n19.-hacknet telegram\n20.-hacknet whatsapp\n21.-CCV VISA\n22.-intruso router\n23.-CARDS v2\nSeleccione una opsion: ")) 
+choice = int(input("1.-TIKTOK REPORT BOT\n2.-ESCANEO WEP\n3.-spam de correos gmail\n4.-info de IP publica\n5.-Servidor privado http\n6.-Mi IP privada \n7.-info basica de cualquier tipo de ip \n8.-Info de un numero\n9.-Barrido de IP\n10.-BotChat\n11.-TelegramBot\n12.-DDOS\n13.-codigo fuente de una wep\n14.-SSL wep\n15.-Usar bash\n16.-hacknet tiktok\n17.-hacknet ig\n18.-hacknet facebook\n19.-hacknet telegram\n20.-hacknet whatsapp\n21.-CCV VISA\n22.-intruso router\n23.-CARDS v2\n24.-ping\nSeleccione una opsion: ")) 
 
 b = 1         
 if choice == 1:
@@ -439,13 +446,13 @@ elif choice == 5:
             self.end_headers()
             self.wfile.write((text).encode('utf-8'))
      IP = ""
-     IP = input("ingresa tu direccion IP, si no quieres solo pon 'localhost': ")
-     print("para entrar al server busca en gogle 'localhost:8000 o si pusiste tu ip solo cambias el localhost por la IP")
+     IP = input("host: ")
+     PORT = int(input("port: "))
      text = ""
      text = input ("ingresa el contenido del server:")
      if __name__ == '__main__':
          from http.server import HTTPServer
-         server = HTTPServer(( (IP), 8000,), GetHandler)
+         server = HTTPServer(( (IP), PORT,), GetHandler)
      try:
         print("coneccion exitosa :)")
         sleep(1)
@@ -1081,6 +1088,10 @@ elif choice == 22:
 		                print('[*] Datos recibidos: {}'.format(data.decode('utf-8'))) 
 		            conn.send(data)        
 elif choice == 23:
+	os.system("clear")
+	a(RR+"█▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀▀█")
+	a(RR+"█░░░ █▄▄█ █▄▄▀ █░▒█ ▀▀▀▄▄")
+	a(RR+"█▄▄█ █░▒█ █░▒█ █▄▄▀ █▄▄▄█")
 	def auten():
 		b = False
 		a = input("contraseña: ")
@@ -1289,4 +1300,12 @@ elif choice == 23:
 			while True:
 				sleep(u)
 				mc = CCNumGen('mc', 2)
-	ew()		                                                                                                                                                                                                                                                                                                                                                                                                   
+	ew()		                                                                                                  
+elif choice == 24:
+	
+	web = input("dominio web: ")
+	def a():
+		while True:
+			verbose_ping(web)
+	print(a())
+			                                                                                                                                                                                                                                                                                                
